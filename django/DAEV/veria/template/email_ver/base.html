@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Email Verification and Domain Availability</title>
+  <style>
+    /* Add your custom CSS styles here */
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="{% url 'register' %}">Register</a></li>
+        <li><a href="{% url 'check_domain' %}">Check Domain</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer>
+    &copy; Email Verification and Domain Availability
+  </footer>
+</body>
+</html>
